@@ -12,13 +12,11 @@ public class TestMarketBuy extends BaseUITest{
     @Test
     @Description("Тест-кейс №1")
     public  void CheckBasket() throws InterruptedException {
-        Thread.sleep(8000);
         welcome.ExBTN.click();
         welcome.GiveAccess.click();
         welcome.AccessAdress.click();
         mainPage.CatalogBTN.click();
         catalog.ScrollToName.scrollTo();
-        Thread.sleep(2000);
         catalog.ScrollToName.click();
         books.FirstBook.scrollTo();
         books.FirstBook.click();
